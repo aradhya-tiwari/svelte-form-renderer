@@ -3,7 +3,7 @@
     import Label from "$lib/components/ui/label/label.svelte";
     import TextInput from "./inputs/TextInput.svelte";
 
-    let { formSchema } = $props();
+    let { formSchema = $bindable() } = $props();
 </script>
 
 <form action="/" method="post" class="space-y-2">
@@ -12,6 +12,13 @@
         {#if item.type == "text"}
             <Label>{item.title}</Label>
             <TextInput attributes={item.attributes} />
+            <Button
+                onclick={() => {
+                    item.attributes.class = "bg-blue-300";
+                }}
+            >
+                HI</Button
+            >
         {:else if item.type == "number"}
             <!-- content here -->
         {:else if item.type == "email"}

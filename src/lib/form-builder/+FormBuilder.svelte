@@ -75,7 +75,7 @@
         bind:this={editor}
         class="h-[90vh] shadow w-[70%] m-2 border-2 rounded-lg"
     >
-        <FormRenderer formSchema={abc} />
+        <FormRenderer bind:formSchema={abc} />
         <Button
             variant="outline"
             onclick={(e) => {
