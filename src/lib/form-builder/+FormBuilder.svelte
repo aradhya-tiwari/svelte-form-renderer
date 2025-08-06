@@ -2,7 +2,7 @@
     import Button from "$lib/components/ui/button/button.svelte";
     import Input from "$lib/components/ui/input/input.svelte";
     import Label from "$lib/components/ui/label/label.svelte";
-    import FormRenderer from "$lib/render/FormRenderer.svelte";
+    import FormRenderer from "$lib/form-render/FormRenderer.svelte";
     import Sortable from "sortablejs";
     import { onMount } from "svelte";
 

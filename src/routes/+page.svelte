@@ -1,5 +1,5 @@
 <script>
-    import FormRenderer from "$lib/render/FormRenderer.svelte";
+    import FormRenderer from "$lib/form-render/FormRenderer.svelte";
     let formSchema = [
         {
             title: "First Name",
